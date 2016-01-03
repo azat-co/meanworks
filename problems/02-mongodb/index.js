@@ -54,7 +54,7 @@ exports.verify = function (args, cb) {
           return cb(false)
         }
       }
-      console.info('Congratulations!\n' +
+      console.info('✓ Congratulations!\n' +
                   'You have a compatible version of MongoDB installed!')
       return cb(true)
     })

@@ -42,7 +42,7 @@ exports.verify = function (args, cb) {
           return cb(false)
         }
       }
-      console.info('Congratulations!\n' +
+      console.info('✓ Congratulations!\n' +
                   'You have a compatible version of Node.js installed!')
       var compatibleVersion = '2.14.15' // npm
       if (args.join('').toLowerCase() === 'skip') {
@@ -88,7 +88,7 @@ exports.verify = function (args, cb) {
           console.log('(You can also just skip this if you want)')
           return cb(false)
         }
-        console.info('Congratulations!\n' +
+        console.info('✓ Congratulations!\n' +
                     'You have a compatible version of npm (' + compatibleVersion + ') installed!')
         return cb(true)
       })

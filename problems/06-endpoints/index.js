@@ -1,6 +1,4 @@
 var fs = require('fs')
-
-
 var mongo = require('mongodb'),
   supertest = require('supertest'),
   path = require('path'),

@@ -1,13 +1,7 @@
 var fs = require('fs')
 var path = require('path')
-var CombinedStream = require('combined-stream2')
-
-var combinedStream = CombinedStream.create()
-combinedStream.append(fs.createReadStream(path.join(__dirname, 'problem.txt')))
-combinedStream.append(fs.createReadStream(path.join(__dirname, '..', '..', 'instructions.txt')))
-
-exports.problem = combinedStream
-exports.solution = fs.createReadStream(path.join(__dirname,   'solution.txt'))
+exports.problem = require(path.join(__dirname, '..', '..', 'problem'))(__dirname)
+exports.solution = require(path.join(__dirname, '..', '..', 'solution'))(__dirname)
 
 var exec = require('child_process').exec
 var node = process.execPath

@@ -93,13 +93,13 @@
     "npm": "^2.14.7"
   },
   "scripts": {
-    "start-original": "node server",
-    "test-original": "grunt test",
+    "start": "node server",
+    "test": "grunt test",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update",
-    "test": "./node_modules/mocha/bin/mocha test.js",
-    "start": "node ./node_modules/nodemon/bin/nodemon.js index.js",
-    "seed": "mongoimport  --host=127.0.0.1 --port=27017 --db mean --collection transactions --file transactions.json --jsonArray",
-    "seed-accounts": "mongoimport  --host=127.0.0.1 --port=27017 --db mean --collection accounts --file accounts.json --jsonArray"
+    "test-old": "./node_modules/mocha/bin/mocha test.js",
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js index.js",
+    "seed-transactions": "mongoimport  --host=127.0.0.1 --port=27017 --db ngfullstacknew-dev --collection transactions --file transactions.json --jsonArray",
+    "seed-accounts": "mongoimport  --host=127.0.0.1 --port=27017 --db ngfullstacknew-dev --collection accounts --file accounts.json --jsonArray"
   },
   "private": true
 }

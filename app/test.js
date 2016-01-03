@@ -1,6 +1,6 @@
 var supertest = require('supertest'),
   id = null,
-  url = 'http://localhost:3000'
+  url = 'http://localhost:9000'
 
 describe('Transaction resource', function(){
 

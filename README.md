@@ -1,4 +1,4 @@
-meanworks is a M.E.A.N.(O) workshop for Capital One SECON
+MEANWorks: MongoDB/Mongoose, Express, Angular and Node Workshop with Angular Fullstack Generator
 
 =========
 
@@ -83,7 +83,7 @@ If you have completed all or some of the adventures but want to do them again, s
 
 Bugs?
 
-:bug::bug::bug: >>> https://github.kdc.capitalone.com/secollege/mean/issues
+:bug::bug::bug: >>> https://github.com/azat-co/meanworks/issues
 
 ---
 
@@ -91,4 +91,4 @@ Bugs?
 
 1. Fork this repository
 1. Make changes in a branch off from master
-1. Submit a pull request to secollege/meanworks (this tool) or secollege/mean (official solution).
+1. Submit a pull request to azat-co/meanworks (this tool) or secollege/mean (official solution).

@@ -2,13 +2,16 @@
 SOLUTION
 ---
 
-Download files:
+Download the JSON files for transactions and accounts:
 
-https://github.kdc.capitalone.com/secollege/mean/raw/master/code/transactions.json
-https://github.kdc.capitalone.com/secollege/mean/raw/master/code/accounts.json
+https://github.com/azat-co/meanworks/raw/master/app/transactions.json
+https://github.com/azat-co/meanworks/raw/master/app/accounts.json
+
+Run:
 
 $ mongod
 
+Then:
 
-$ mongoimport  --host=127.0.0.1 --port=27017 --db mean --collection transactions --file transactions.json --jsonArray
-$ mongoimport  --host=127.0.0.1 --port=27017 --db mean --collection accounts --file accounts.json --jsonArray
+$ mongoimport  --host=127.0.0.1 --port=27017 --db ngfullstacknew-dev --collection transactions --file transactions.json --jsonArray
+$ mongoimport  --host=127.0.0.1 --port=27017 --db ngfullstacknew-dev --collection accounts --file accounts.json --jsonArray

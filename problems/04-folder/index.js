@@ -1,12 +1,8 @@
-var fs = require('fs')
 var path = require('path')
-var CombinedStream = require('combined-stream2')
+exports.problem = require(path.join(__dirname, '..', '..', 'problem'))(__dirname)
+exports.solution = require(path.join(__dirname, '..', '..', 'solution'))(__dirname)
 
-var combinedStream = CombinedStream.create()
-combinedStream.append(fs.createReadStream(path.join(__dirname, 'problem.txt')))
-combinedStream.append(fs.createReadStream(path.join(__dirname, '..', '..', 'instructions.txt')))
-exports.problem = combinedStream
-exports.solution = fs.createReadStream(__dirname + '/solution.txt')
+var folderName = 'ng-fullstack-new'
 
 exports.verify = function (args, cb) {
   var cwd = process.cwd()
@@ -21,7 +17,7 @@ exports.verify = function (args, cb) {
                 'This is not recommended. Please make a new dir, and use that.')
     return cb(false)
   }
-  var folderName = 'ng-fullstack-new'
+
   if (cwd.substring(cwd.lastIndexOf('/')) !== '/' + folderName) {
     console.error('Your current folder is %s', cwd);
     console.error('Please navigate into project folder %s (maybe cd %s?).', folderName, folderName)

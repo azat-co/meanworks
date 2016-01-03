@@ -30,13 +30,10 @@ var problems = [
   '03-installs', // bower, grunt-cli, yo, generator-angular-fullstack, webdriver
   '04-folder',
   '05-seed',
-  '06-endpoint-accounts', // accounts endpoint
-  '07-endpoint-transactions', // transactions endpoint
-  '08-route-accounts', // accounts route
-  '09-ui-accounts',
-  '10-controller-accounts',
-  '12-ui-transactions',
-  '13-controller-transactions'
+  '06-endpoints', // accounts and transactions endpoints
+  '07-ui-transactions', // accounts route
+  '08-ui-accounts',
+  '09-ui-main' // and navigation
 ]
 
 problems.forEach(function (prob) {

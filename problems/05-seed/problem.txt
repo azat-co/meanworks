@@ -1,23 +1,44 @@
 PROBLEM
 
-We'll need some seed data for our application.
+We'll need some seed data for our application. For example, this is how a transaction might look like:
 
-Download the JSON files for transactions and accounts
+{
+	"amount": 350.15,
+	"balance": 1200.85,
+	"category": "Utilities",
+	"date": "pending",
+	"desc": {
+		"long": "This is a description",
+		"short": "PG&E"
+	}
+}
 
-https://github.kdc.capitalone.com/secollege/mean/raw/master/code/transactions.json
-https://github.kdc.capitalone.com/secollege/mean/raw/master/code/accounts.json
+While an account document might look like:
+
+{
+  "name": "Emergency Fund",
+  "type": "savings",
+  "number": "12532343",
+  "routing": "031176110"
+}
+
+Download the JSON files for transactions and accounts:
+
+https://github.com/azat-co/meanworks/raw/master/app/transactions.json
+https://github.com/azat-co/meanworks/raw/master/app/accounts.json
 
 Start the database (on localhost and default port) and execute the imports form JSON files with these commands:
 
-$ mongoimport  --host=127.0.0.1 --port=27017 --db mean --collection transactions --file transactions.json --jsonArray
-$ mongoimport  --host=127.0.0.1 --port=27017 --db mean --collection accounts --file accounts.json --jsonArray
+$ mongoimport  --host=127.0.0.1 --port=27017 --db ngfullstacknew-dev --collection transactions --file transactions.json --jsonArray
+$ mongoimport  --host=127.0.0.1 --port=27017 --db ngfullstacknew-dev --collection accounts --file accounts.json --jsonArray
 
---db mean: name of the database
+--db ngfullstacknew-dev: name of the database ngfullstacknew-dev
 --collection: name of the collections
 --jsonArray: allows mongoimport to take an array instead of an object
 
+**If you completed bonus in adventure 4-folder, run `$ npm run seed-accounts` and `$ npm run seed-transactions`.
 
-You should be able to see your data in mongo console ($ mongo) with these commands:
+You should be able to see your data in mongo console (`$ mongo`) with these commands:
 
 > use mean
 > db.accounts.find()
@@ -32,17 +53,3 @@ HINTS
 The database must be running in its own window/tab or in detached mode.
 
 To start the DB, run `$ mongod`.
-
-
----
-
-Run `$ $ADVENTURE_COMMAND verify` once that is done.
-
-Some helpful commands:
-
-`$ $ADVENTURE_COMMAND help` to get help with the workshop
-`$ $ADVENTURE_COMMAND print` to re-display the current exercise
-`$ $ADVENTURE_COMMAND verify YOUR_FILE_NAME` to verify that you have finished an exercise
-`$ $ADVENTURE_COMMAND solution` to show the solution for the current exercise
-
-`$ $ADVENTURE_COMMAND verify skip` to skip it.

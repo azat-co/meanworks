@@ -19,11 +19,12 @@ Last updated: Jan 2016
 
 # Agenda
 
-* Quick Overview of MEAN (MongoDB, Express, Angular, and Node)
+* Quick Overview of MEAN
 * MongoDB demo
 * Express basics
 * Angular and Full Stack Generator
 * MEANWorks adventure demo
+* WORKSHOP 🔨
 
 ---
 
@@ -35,6 +36,13 @@ You'll need these (install them before proceeding):
 * Grunt, Yeoman, Full Stack Generator, webdriver
 * Code editor (Sublime Text, Atom, etc.)—*IDEs are not recommended for this workshop*
 * Command line app (Terminal, iTerm, etc.)
+
+---
+
+# Requirements
+
+You'll need these (install them before proceeding):
+
 * Internet connection (duh!)
 * Slides & sample code <https://github.com/azat-co/meanworks>
 
@@ -78,7 +86,7 @@ You'll also need (we'll install them together in MEANWorks):
 
 ---
 
-# Downloading
+# Downloading Slides and Code
 
 Clone the repository (recommended):
 
@@ -90,10 +98,16 @@ Navigate to slides:
 
 ```
 $ cd meanworks/slides
-$ open README.md
+$ open README.pdf
 ```
 
+---
+
 Or read in the browser:
+
+<https://github.com/azat-co/meanworks/master/blob/slides/README.pdf>
+
+and
 
 <https://github.com/azat-co/meanworks/master/blob/slides/README.md>
 
@@ -171,9 +185,11 @@ Instructor: Azat Mardan
 
 # Install MongoDB
 
+For all OS:
+
 <https://www.mongodb.org/downloads>
 
-For Mac OS X:
+For Mac OS X and Homebrew:
 
 ```
 $ brew install mongodb@3.0.6
@@ -255,7 +271,7 @@ Useful MongoDB Shell commands:
 
 # MongoDB Shell Demo
 
-## Demo time! :ok_hand:
+Demo time! :ok_hand:
 
 ---
 
@@ -347,6 +363,12 @@ collection.find({}).toArray(function(err, docs) {
 
 ---
 
+# MongoDB and Mongoose Cheatsheet
+
+<https://github.com/azat-co/cheatsheets/tree/master/mongodb-mongoose>
+
+---
+
 
 # AngularJS
 
@@ -371,6 +393,12 @@ models->views
 views->models
 
 No DOM manipulations.
+
+No jQuery.
+
+No `$('.bnt').click(fn)`.
+
+👍
 
 ---
 
@@ -475,7 +503,7 @@ angular.module('ngFullstackNewApp')
 # Node.js
 
 * Scalable, fast web platform
-* Mature (v4.1 as of Sep '15) and supports a lot of ES6 features
+* Mature (v5.3 as of Jan '16) and supports a lot of ES6 features
 * Allows for front-end code re-use on the server: lodash, underscore and vice versa
 
 ---
@@ -513,31 +541,33 @@ LibUv performs, mantains and manages all the io and events in the event pool. ( 
 
 * Core modules: http, fs, net, utils, query
 * Web frameworks: Express, Hapi, Loopback, Sails
-* Database drivers: mongodb (native Node.js MongoDB driver)
+* Database drivers: mongodb, PostgreSQL, MySQL...
 * Testing: Mocha, supertest and expect
 * Dependency management: Bower and npm
 * Building: Webpack, Grunt or Gulp
 
 ---
 
-# Node Stack
+# Node Stack II
 
 * Authentication: passport
 * Code generation: yo
 * Process managers: pm2, strong-cluster-control, forever
-
-
----
-
-# Node Console Demo
-
-Let's play with Node! :open_hands:
 
 ---
 
 # npm Rules
 
 ![inline](images/npmcount.png)
+
+---
+
+# Node Console Demo
+
+Let's play with Node!
+
+:open_hands:
+
 
 ---
 
@@ -645,6 +675,7 @@ app.use(function (req, res, next) {
 # Express.js Cheatsheet
 
 <https://github.com/azat-co/cheatsheets/blob/master/express4/index.md>
+
 
 ---
 
@@ -861,12 +892,63 @@ $ yo angular-fullstack [app-name]
 
 ---
 
+# Generator Help
+
+When in doubt:
+
+```
+$ yo angular-fullstack --help
+```
+
+---
+
+# Generator Commands
+
+Server Side:
+
+```
+  angular-fullstack:endpoint
+```
+
+Client Side:
+
+```
+  angular-fullstack:route
+  angular-fullstack:controller
+  angular-fullstack:filter
+```
+
+---
+
+# Generator Commands II
+
+Client Side:
+
+```
+  angular-fullstack:directive
+  angular-fullstack:service
+  angular-fullstack:provider
+  angular-fullstack:factory
+  angular-fullstack:decorator
+```
+
+Deployment:
+
+```
+  angular-fullstack:openshift
+  angular-fullstack:heroku
+```
+
+---
+
 # Generator Demo!
 
 It's demo time! :telescope: :computer: :ok_hand:
 
 ```
-$ cd app
+$ mkdir app
+$ yo angular-fullstack app
+$ grunt test
 $ grunt serve
 ```
 
@@ -972,38 +1054,18 @@ $ yo angular-fullstack
 ```
 $ yo angular-fullstack:endpoint account
 $ yo angular-fullstack:route accounts
+$ yo angular-fullstack:endpoint transaction
+$ yo angular-fullstack:route transactions
 ```
 
-Answer questions
+(Answer generator questions)
 
 ---
 
 # Test First
 
-test.js:
-
-```js
-var supertest = require('supertest'),
-  id = null,
-  url = 'http://localhost:3000'
-
-describe('GET /transactions', function(){
-  it('responds with json', function(done){
-    supertest(url)
-      .get('/api/transactions')
-      .expect(200, done)
-  })
-})
 ```
-
----
-
-# Running the Test
-
-In terminal:
-
-```
-$ ./node_modules/mocha/bin/mocha test.js
+$ grunt test
 ```
 
 ---
@@ -1032,7 +1094,7 @@ app.use(express.static('public'))
 
 ```js
 ...
-var url = 'mongodb://localhost:27017/mean';
+var url = 'mongodb://localhost:27017/ngfullstacknew-dev';
 
 mongo.connect(url, function(err, db) {
   if (err) {
@@ -1086,16 +1148,19 @@ $ node ./node_modules/nodemon/bin/nodemon.js index.js
 
 # Seeding the Database
 
-Use this command in terminal to populate the `transactions` collection in the database `mean` with transactions:
+Use this command in terminal to populate the `transactions` collection in the database `ngfullstacknew-dev` with transactions:
 
 ```
-$ mongoimport  --host=127.0.0.1 --port=27017 --db mean --collection transactions --file transactions.json --jsonArray
-$ mongoimport  --host=127.0.0.1 --port=27017 --db mean --collection accounts --file accounts.json --jsonArray
+$ mongoimport  --host=127.0.0.1 --port=27017 --db ngfullstacknew-dev --collection transactions --file transactions.json --jsonArray
+$ mongoimport  --host=127.0.0.1 --port=27017 --db ngfullstacknew-dev --collection accounts --file accounts.json --jsonArray
 ```
 
+---
 
-transaction.json: <https://github.kdc.capitalone.com/secollege/mean/raw/master/code/transactions.json>
-accounts.json: <https://github.kdc.capitalone.com/secollege/mean/raw/master/code/accounts.json>
+# Data JSON
+
+transaction.json: <https://github.com/azat-co/meanworks/blob/master/app/transactions.json>
+accounts.json: <https://github.com/azat-co/meanworks/blob/master/app/accounts.json>
 
 ---
 
@@ -1104,7 +1169,7 @@ accounts.json: <https://github.kdc.capitalone.com/secollege/mean/raw/master/code
 Check the data in the mongo shell:
 
 ```
-> use mean
+> use ngfullstacknew-dev
 > db.transactions.find({})
 ```
 
@@ -1122,15 +1187,34 @@ Open this URL in Chrome, Firefox or Safari:
 
 # Icon Styles
 
-<https://fortawesome.github.io/Font-Awesome/examples/>
+<http://glyphicons.com>
 
 ---
 
-TK
+# ng-repeat
 
 ---
 
-# Questions :confused::question::grin:
+# ng-if
+
+---
+
+# ng-hide
+
+
+---
+
+# ng-click
+
+---
+
+# Questions
+
+:confused:
+
+:question:
+
+:grin:
 
 ---
 

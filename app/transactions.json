@@ -1,52 +1,46 @@
-[
-	{
-		"date": "pending",
-		"desc": {
-			"long":"This is a description",
-			"short":"Short desc"
-		},
-		"category": "Utilities",
-		"amount": 350.15,
-		"balance": 1200.85
-	},
-	{
-		"date": "scheduled",
-		"desc": {
-			"long":"This is a description",
-			"short":"Short desc"
-		},
-		"category": "Direct Deposit",
-		"amount": 350.15,
-		"balance": "---"
-	},
-	{
-		"date": "2015-02-21T19:32:52:823",
-		"desc": {
-			"long":"This is a description",
-			"short":"Short desc"
-		},
-		"category": "Food",
-		"amount": 350.15,
-		"balance": 1200.85
-	},
-	{
-		"date": "2015-03-07T19:32:52:823",
-		"desc": {
-			"long":"This is a description",
-			"short":"Short desc"
-		},
-		"category": "Coffee",
-		"amount": -350.15,
-		"balance": 1200.85
-	},
-	{
-		"date": "2015-05-14T19:32:52:823",
-		"desc": {
-			"long":"This is a description",
-			"short":"Short desc"
-		},
-		"category": "Deposit",
-		"amount": 150.15,
-		"balance": 1200.85
-		}
-]
+[{
+	"amount": 350.15,
+	"balance": 1200.85,
+	"category": "Utilities",
+	"date": "pending",
+	"desc": {
+		"long": "This is a description",
+		"short": "PG&E"
+	}
+}, {
+	"amount": 2150.64,
+	"balance": "---",
+	"category": "Direct Deposit",
+	"date": "scheduled",
+	"desc": {
+		"long": "This is a description",
+		"short": "Salary"
+	}
+}, {
+	"amount": 350.15,
+	"balance": 1200.85,
+	"category": "Food",
+	"date": "2015-02-21T19:32:52:823",
+	"desc": {
+		"long": "This is a description",
+		"short": "Safeway"
+	}
+}, {
+	"amount": -3.50,
+	"balance": 1200.85,
+	"category": "Coffee",
+	"date": "2015-03-07T19:32:52:823",
+	"desc": {
+		"long": "This is a description",
+		"short": "Starbucks"
+	}
+}, {
+	"amount": 150.15,
+	"balance": 1200.85,
+	"category": "Deposit",
+	"date": "2015-05-14T19:32:52:823",
+	"desc": {
+		"long": "This is a description",
+		"short": "Refund"
+	}
+}]

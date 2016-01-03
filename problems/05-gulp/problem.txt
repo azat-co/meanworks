@@ -1,0 +1,36 @@
+PROBLEM
+
+Gulp is a build tool for front-end apps. It uses streams and a more imperative style compare to Grunt's configurational style.
+
+
+Please install gulp like any other npm module. Do it globally, because gulp is a command-line tool and not a project dependency.
+
+We are using v3.9.0.
+
+Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and version of MongoDB.
+
+---
+
+HINTS
+
+Use `gulp --version` to check the version.
+
+To install execute:
+
+$ npm install -g gulp@3.9.0
+
+If you're working under proxy, configur gulp appropriately.
+
+
+---
+
+Run `$ $ADVENTURE_COMMAND verify` once that is done.
+
+Some helpful commands:
+
+`$ $ADVENTURE_COMMAND help` to get help with the workshop
+`$ $ADVENTURE_COMMAND print` to re-display the current exercise
+`$ $ADVENTURE_COMMAND verify YOUR_FILE_NAME` to verify that you have finished an exercise
+`$ $ADVENTURE_COMMAND solution` to show the solution for the current exercise
+
+`$ $ADVENTURE_COMMAND verify skip` to skip it.

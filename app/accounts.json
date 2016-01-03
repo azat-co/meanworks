@@ -1,0 +1,14 @@
+[
+	{
+		"name": "Main Checking",
+		"type": "checking",
+		"number": "3456677",
+		"routing": "031176110"
+	},
+	{
+		"name": "Emergency Fund",
+		"type": "savings",
+		"number": "12532343",
+		"routing": "031176110"
+	}
+]

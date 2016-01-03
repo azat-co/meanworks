@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../client/components/util/util.module.js"],"names":[],"mappings":"AAAA,YAAY,CAAC;;AAEb,OAAO,CAAC,MAAM,CAAC,wBAAwB,EAAE,EAAE,CAAC,CAAC","file":"util.module.js","sourcesContent":["'use strict';\n\nangular.module('ngFullstackNewApp.util', []);\n"]}

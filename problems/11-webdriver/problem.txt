@@ -1,0 +1,38 @@
+PROBLEM
+
+One of the best way to test AngularJS app is to use Selenium WebDriver Manager and WebDriverIO.
+This adventure is about installing WebDriver. Your WebDriverIO is already installed (via npm install from package.json)!
+
+1. Install webdriver-manager
+2. Update it with webdriver-manager update
+3. Start it with webdriver-manager start
+
+WebDriver is a command-line tool so install it with npm accordingly.
+
+The npm name is webdriver-manager.
+
+Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and the version.
+
+---
+
+HINTS
+
+We use -g flag (or --global) when installing command-line tools:
+
+$ npm install -g webdriver-manager
+$ webdriver-manager update
+$ webdriver-manager start
+
+
+---
+
+Run `$ $ADVENTURE_COMMAND verify` once that is done.
+
+Some helpful commands:
+
+`$ $ADVENTURE_COMMAND help` to get help with the workshop
+`$ $ADVENTURE_COMMAND print` to re-display the current exercise
+`$ $ADVENTURE_COMMAND verify YOUR_FILE_NAME` to verify that you have finished an exercise
+`$ $ADVENTURE_COMMAND solution` to show the solution for the current exercise
+
+`$ $ADVENTURE_COMMAND verify skip` to skip it.

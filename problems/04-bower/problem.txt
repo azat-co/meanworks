@@ -1,0 +1,37 @@
+
+PROBLEM
+
+Bower is like an npm only for front-end modules. It has a flat-structure in its dependency folder bower_components.
+
+Please install bower like any other npm module. Do it globally, because bower is a command-line tool and not a project dependency. (Command-line tools installed globally while project dependencies installed locally.)
+
+We are using v1.4.1. Please use bower v1.4.1.
+
+Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and version of MongoDB.
+
+---
+
+HINTS
+
+Use `bower --version` to check the version.
+
+To install bower v1.4.1 execute this command in your Terminal/Command prompt:
+
+$ npm install -g bower@1.4.1
+
+If you're working under proxy, configur bower appropriately.
+
+---
+
+HELP
+
+Run `$ $ADVENTURE_COMMAND verify` once that is done.
+
+Some helpful commands:
+
+`$ $ADVENTURE_COMMAND help` to get help with the workshop
+`$ $ADVENTURE_COMMAND print` to re-display the current exercise
+`$ $ADVENTURE_COMMAND verify YOUR_FILE_NAME` to verify that you have finished an exercise
+`$ $ADVENTURE_COMMAND solution` to show the solution for the current exercise
+
+`$ $ADVENTURE_COMMAND verify skip` to skip it.

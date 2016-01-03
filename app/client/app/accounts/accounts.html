@@ -1,0 +1,15 @@
+<div>This is the accounts view.</div>
+<form class="account-form" ng-submit="addAccount()" name="accountForm">
+   <input type="text" class="form-control" ng-model="newAccountName" placeholder="Enter a new account name" required></input>
+   <input type="text" class="form-control" ng-model="newAccountNumber" placeholder="Enter a new account number" required></input>
+   <input class="btn btn-primary" type="submit" ng-disabled="commentForm.$invalid" value="Post">
+ </form>
+<ul class="account-list">
+    <li ng-repeat="account in accounts">
+      <header>{{ account.name }}</header>
+      <p>{{ account.number }}</p>
+      <a class="btn btn-danger" href="#"  ng-click="removeAccount(account)">
+        <i class="fa fa-trash-o fa-lg"></i> Delete
+      </a>
+    </li>
+  </ul>

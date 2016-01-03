@@ -1,0 +1,7 @@
+---
+SOLUTION
+---
+
+To install Yo:
+
+$ npm install -g yo

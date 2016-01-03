@@ -1,0 +1,33 @@
+PROBLEM
+
+
+
+Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and version of MongoDB.
+
+---
+
+HINTS
+
+Use `yo --version` to check the version.
+
+To install execute:
+
+$ npm install -g yo@1.4.7
+
+
+Yo docs: https://github.com/yeoman/yo
+Yo website: http://yeoman.io
+
+
+---
+
+Run `$ $ADVENTURE_COMMAND verify` once that is done.
+
+Some helpful commands:
+
+`$ $ADVENTURE_COMMAND help` to get help with the workshop
+`$ $ADVENTURE_COMMAND print` to re-display the current exercise
+`$ $ADVENTURE_COMMAND verify YOUR_FILE_NAME` to verify that you have finished an exercise
+`$ $ADVENTURE_COMMAND solution` to show the solution for the current exercise
+
+`$ $ADVENTURE_COMMAND verify skip` to skip it.

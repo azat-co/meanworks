@@ -1,0 +1,6 @@
+---
+SOLUTION
+---
+
+
+$ npm install -g bower

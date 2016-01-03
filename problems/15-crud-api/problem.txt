@@ -1,0 +1,60 @@
+PROBLEM
+
+We need to implement endpoints for the accounts resource to support the CRUD (create-read-update-delete) operations
+
+We'll need the following endpoints/routes on the backend:
+
+1. GET /api/accounts to list the accounts (you already have that one!)
+2. PUT /api/accounts/ID to update an account
+3. POST /api/accounts to create a new account
+4. DELETE /api/accounts/ID to delete an account
+
+Add CRUD routes on the server in index.js file or in routes/accounts.js file if you're following the official solution.
+The main difference is that you'll keep your main index.js file lean when you abstract routes into separate files. You can use this approach in routes/index.js:
+
+module.exports = {
+  transactions: require('./transactions'),
+  accounts: require('./accounts')
+}
+
+To parse URL parameters for ID use `:id` and req.params.id. For example, in index.js:
+
+app.put('/api/accounts/:id', routes.accounts.put)
+
+and in accounts.js we use `req.params.id`:
+
+...
+put: function(req, res, next){
+  var data = {}
+  if (req.body.number) data.number = req.body.number
+  req.db.accountsCollection.update({_id: ObjectId(req.params.id)}, data, function(err, result){
+    console.log('PUT /accounts: ', result.result)
+    return res.send(result.result)
+  })
+},
+...
+
+---
+
+HINTS
+
+1. Use test.js to auto-test your REST API with `npm test` (mongod and Node.js server must be running)
+2. Use Postman to manually test your REST API (not recommended)
+3. Use `req.body.number` when saving or updating data from the incoming requests
+4. Use `$ $ADVENTURE_COMMAND solution` to show the links to the official solution (not recommended)
+
+Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and version of MongoDB.
+
+
+---
+
+Run `$ $ADVENTURE_COMMAND verify` once that is done.
+
+Some helpful commands:
+
+`$ $ADVENTURE_COMMAND help` to get help with the workshop
+`$ $ADVENTURE_COMMAND print` to re-display the current exercise
+`$ $ADVENTURE_COMMAND verify YOUR_FILE_NAME` to verify that you have finished an exercise
+`$ $ADVENTURE_COMMAND solution` to show the solution for the current exercise
+
+`$ $ADVENTURE_COMMAND verify skip` to skip it.

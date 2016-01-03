@@ -1,0 +1,65 @@
+PROBLEM
+
+Congratulations to making thus far. This is the last and the toughest adventures in this module!
+As typical in games, this is your end-of-level monster/boss. ;)
+
+Add CRUD (create-read-update-delete) operations for the accounts resource using the same services pattern as you saw for the reading of transactions (GET /transactions).
+
+We'll need the following services in example-feature.service.js:
+
+1. getAccounts for GET /api/accounts
+2. updateAccount for PUT /api/accounts/ID
+3. addAccount for POST /api/accounts
+4. deleteAccounts for DELETE /api/accounts/ID
+
+Implement vm.deleteAccount, vm.addAccount, vm.updateAccount in example-feature.controller.js, so we can call them from the template.
+These methods will handle the removal, addition and modification of accounts.
+
+Add ng-repeat to list account numbers. Display buttons for delete and update. Use the methods vm.updateAccount and wm.deleteAccount like this:
+
+<button class="oui-button progressive ng-scope" ng-click="vm.updateAccount(account)">Update</button>
+<button class="oui-button destructive ng-scope" ng-click="vm.deleteAccount(account, $index)">Delete</button>
+
+The add button goes on the new account form which you need to add to the template.
+
+<button class="oui-button action ng-scope" ng-click="vm.addAccount()">Add</button>
+
+The CRUD endpoints on the server should be ready based on the work from the previous adventure.
+
+---
+
+HINTS
+
+1. Copy account CRUD services into example-feature/scripts/example-feature.services.js from here: https://github.kdc.capitalone.com/secollege/mean/blob/master/code/public/app/example-feature/scripts/example-feature.service.js
+
+2. Add controller logic
+
+accountService
+   .getAccounts()
+   .then(function(accounts){
+     vm.accounts = accounts
+  });
+
+And methods: vm.deleteAccount, vm.addAccount, vm.updateAccount
+
+from https://github.kdc.capitalone.com/secollege/mean/blob/master/code/public/app/example-feature/scripts/example-feature.controller.js
+
+3. Add the account form and ng-repeat from https://github.kdc.capitalone.com/secollege/mean/blob/master/code/public/app/example-feature/partials/feature.html
+
+4. Use `$ $ADVENTURE_COMMAND solution` to show the links to the official solution (not recommended)
+
+Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and version of MongoDB.
+
+
+---
+
+Run `$ $ADVENTURE_COMMAND verify` once that is done.
+
+Some helpful commands:
+
+`$ $ADVENTURE_COMMAND help` to get help with the workshop
+`$ $ADVENTURE_COMMAND print` to re-display the current exercise
+`$ $ADVENTURE_COMMAND verify YOUR_FILE_NAME` to verify that you have finished an exercise
+`$ $ADVENTURE_COMMAND solution` to show the solution for the current exercise
+
+`$ $ADVENTURE_COMMAND verify skip` to skip it.

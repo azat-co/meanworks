@@ -1,0 +1,16 @@
+---
+SOLUTION
+---
+
+Front-end code:
+
+1. example-feature.controller.js: https://github.kdc.capitalone.com/secollege/mean/blob/master/code/public/app/example-feature/scripts/example-feature.controller.js
+2. example-feature.service.js: https://github.kdc.capitalone.com/secollege/mean/blob/master/code/public/app/example-feature/scripts/example-feature.service.js
+3. feature.html: https://github.kdc.capitalone.com/secollege/mean/blob/master/code/public/app/example-feature/partials/feature.html
+
+Back-end code:
+
+1. accounts.js: https://github.kdc.capitalone.com/secollege/mean/blob/master/code/routes/accounts.js
+2. index.js: https://github.kdc.capitalone.com/secollege/mean/blob/master/code/index.js
+
+Entire app: https://github.kdc.capitalone.com/secollege/mean/tree/master/code

@@ -1,0 +1,43 @@
+***************
+*  SOLUTION   *
+***************
+
+
+To use installer (N00b approach):
+
+http://nodejs.org/
+
+For Mac OS X:
+
+$ brew install nodejs@5.1.0
+
+For power users (advanced hackers):
+
+https://gist.github.com/isaacs/579814
+
+
+For multi-version setup:
+
+* n https://github.com/tj/n
+* nvm https://github.com/creationix/nvm
+* nave https://github.com/isaacs/nave
+
+
+To use installer (N00b approach):
+
+http://nodejs.org/
+
+For Mac OS X:
+
+$ brew install nodejs
+
+For power users (advanced hackers):
+
+https://gist.github.com/isaacs/579814
+
+
+For multi-version setup:
+
+n https://github.com/tj/n
+nvm https://github.com/creationix/nvm
+nave https://github.com/isaacs/nave

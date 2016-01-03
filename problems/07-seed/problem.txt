@@ -1,0 +1,48 @@
+PROBLEM
+
+We'll need some seed data for our application.
+
+Download the JSON files for transactions and accounts
+
+https://github.kdc.capitalone.com/secollege/mean/raw/master/code/transactions.json
+https://github.kdc.capitalone.com/secollege/mean/raw/master/code/accounts.json
+
+Start the database (on localhost and default port) and execute the imports form JSON files with these commands:
+
+$ mongoimport  --host=127.0.0.1 --port=27017 --db mean --collection transactions --file transactions.json --jsonArray
+$ mongoimport  --host=127.0.0.1 --port=27017 --db mean --collection accounts --file accounts.json --jsonArray
+
+--db mean: name of the database
+--collection: name of the collections
+--jsonArray: allows mongoimport to take an array instead of an object
+
+
+You should be able to see your data in mongo console ($ mongo) with these commands:
+
+> use mean
+> db.accounts.find()
+> db.transactions.find()
+
+Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and version of MongoDB.
+
+---
+
+HINTS
+
+The database must be running in its own window/tab or in detached mode.
+
+To start the DB, run `$ mongod`.
+
+
+---
+
+Run `$ $ADVENTURE_COMMAND verify` once that is done.
+
+Some helpful commands:
+
+`$ $ADVENTURE_COMMAND help` to get help with the workshop
+`$ $ADVENTURE_COMMAND print` to re-display the current exercise
+`$ $ADVENTURE_COMMAND verify YOUR_FILE_NAME` to verify that you have finished an exercise
+`$ $ADVENTURE_COMMAND solution` to show the solution for the current exercise
+
+`$ $ADVENTURE_COMMAND verify skip` to skip it.

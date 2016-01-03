@@ -1,0 +1,7 @@
+---
+SOLUTION
+---
+
+feature files: https://github.kdc.capitalone.com/secollege/mean/tree/master/code/public/app/example-feature
+
+app.scss: https://github.kdc.capitalone.com/secollege/mean/blob/master/code/public/app/core/styles/app.scss

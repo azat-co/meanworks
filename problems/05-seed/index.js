@@ -11,19 +11,19 @@ exports.verify = function (args, cb) {
   try {
     var transactions = require(path.join(cwd, 'transactions.json'))
   } catch (e) {
-    console.log('Cannot find or parse transactions.json in %s', cwd)
-    console.log('Please download transactions.json.')
+    console.error('Cannot find or parse transactions.json in %s', cwd)
+    console.error('Please download transactions.json.')
     return cb(false)
   }
   try {
     var accounts = require(path.join(cwd, 'accounts.json'))
   } catch (e) {
-    console.log('Cannot find or parse accounts.json in %s', cwd)
-    console.log('Please download accounts.json.')
+    console.error('Cannot find or parse accounts.json in %s', cwd)
+    console.error('Please download accounts.json.')
     return cb(false)
   }
 
-  var url = 'mongodb://localhost:27017/mean'
+  var url = 'mongodb://localhost:27017/ngfullstacknew-dev'
 
   mongo.connect(url, function(err, db) {
     if (err) {
@@ -44,7 +44,7 @@ exports.verify = function (args, cb) {
           console.error('The accounts collection is empty in the mean database.')
           return cb(false)
         }
-        console.log('Awesome. You have the data.')
+        console.info('✓ Awesome. You have the data.')
         db.close()
         return cb(true)
       })

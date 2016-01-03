@@ -6,7 +6,7 @@ var combinedStream = CombinedStream.create()
 combinedStream.append(fs.createReadStream(path.join(__dirname, 'problem.txt')))
 combinedStream.append(fs.createReadStream(path.join(__dirname, '..', '..', 'instructions.txt')))
 exports.problem = combinedStream
-exports.solution = fs.createReadStream(__dirname + '/solution.txt');
+exports.solution = fs.createReadStream(__dirname + '/solution.txt')
 
 var checkVersionNpm = require(path.join(__dirname, '..', '..', 'check-version-npm.js'))
 exports.verify = function (args, cb) {

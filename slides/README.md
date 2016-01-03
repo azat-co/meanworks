@@ -752,8 +752,8 @@ $ yo angular-fullstack [app-name]
 # Project
 
 ? What would you like to write tests with? (Use arrow keys)
-❯ Jasmine
-  Mocha + Chai + Sinon
+  Jasmine
+> Mocha + Chai + Sinon
 ```
 
 ---

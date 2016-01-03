@@ -1,0 +1,10 @@
+---
+SOLUTION
+---
+
+
+$ mkdir ng-fullstack-new
+$ cd ng-fullstack-new
+$ yo angular-fullstack ng-fullstack-new
+
+The full package.json: https://github.com/azat-co/meanworks/blob/master/app/package.json

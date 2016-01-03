@@ -1,6 +1,0 @@
----
-SOLUTION
----
-
-
-$ npm install -g gulp

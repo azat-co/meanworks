@@ -1,1 +1,23 @@
-<div>This is the transactions view.</div>
+<h1>Transactions</h1>
+
+<table class="transaction-list">
+  <tbody>
+    <tr ng-repeat="transaction in transactions">
+      <td>{{ transaction.date }}<i ng-hide="transaction.date!='pending'" class="fa fa fa-spinner fa-spin">?</i></td>
+      <td>{{ transaction.amount }}</td>
+      <td>
+        <a class="btn btn-info" href="#"  ng-click="disputeTransaction(transaction)" ng-if="transaction.dispute==false">
+          <i class="fa fa-flag-o fa-lg"></i>
+          Dispute
+        </a>
+        <a class="btn btn-danger" href="#"  ng-click="cancelDisputeTransaction(transaction)" ng-if="transaction.dispute==true">
+          <i class="fa fa-flag-o fa-lg"></i>
+          Cancel Dispute
+        </a>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="/" class="btn btn-default">&lt; Home</a>

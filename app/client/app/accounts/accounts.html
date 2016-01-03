@@ -5,11 +5,13 @@
    <input class="btn btn-primary" type="submit" ng-disabled="commentForm.$invalid" value="Post">
  </form>
 <ul class="account-list">
-    <li ng-repeat="account in accounts">
-      <header>{{ account.name }}</header>
-      <p>{{ account.number }}</p>
-      <a class="btn btn-danger" href="#"  ng-click="removeAccount(account)">
-        <i class="fa fa-trash-o fa-lg"></i> Delete
-      </a>
-    </li>
-  </ul>
+  <li ng-repeat="account in accounts">
+    <header>{{ account.name }}</header>
+    <p>{{ account.number }}</p>
+    <a class="btn btn-danger" href="#"  ng-click="removeAccount(account)">
+      <i class="fa fa-trash-o fa-lg"></i> Delete
+    </a>
+  </li>
+</ul>
+
+<a href="/" class="btn btn-default">&lt; Home</a>

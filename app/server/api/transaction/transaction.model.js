@@ -13,7 +13,11 @@ var TransactionSchema = new mongoose.Schema({
   },
   "category": String, // enum?
   "amount": Number,
-  "balance": Number
+  "balance": Number,
+  dispute: {
+    type: Boolean,
+    default: false
+  }
 })
 
 export default mongoose.model('Transaction', TransactionSchema);

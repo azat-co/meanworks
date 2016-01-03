@@ -11,6 +11,12 @@ function NavbarController() {
   this.menu = [{
     'title': 'Home',
     'state': 'main'
+  }, {
+    'title': 'Accounts',
+    'state': 'accounts'
+  }, {
+    'title': 'Transactions',
+    'state': 'transactions'
   }];
   this.isCollapsed = true;
 };

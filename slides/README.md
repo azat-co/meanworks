@@ -1184,27 +1184,87 @@ Open this URL in Chrome, Firefox or Safari:
 
 ---
 
+# Route
 
-# Icon Styles
+```js
+angular.module('ngFullstackNewApp')
+  .config(function ($stateProvider) {
+    $stateProvider
+      .state('accounts', {
+        url: '/accounts',
+        templateUrl: 'app/accounts/accounts.html',
+        controller: 'AccountsCtrl'
+      });
+  });
+```  
 
-<http://glyphicons.com>
+---
+
+# Controller
+
+```js
+angular.module('ngFullstackNewApp')
+  .controller('AccountsCtrl', function ($scope, $http) {
+    $scope.accounts = [];
+
+    $http.get('/api/accounts').success(function(accounts) {
+      $scope.accounts = accounts;
+    });
+  });
+```
+
+---
+
+
+# Directives
 
 ---
 
 # ng-repeat
 
+```html
+<ul class="account-list">
+  <li ng-repeat="account in accounts">
+    <span>{{ account.name }}</span>
+    <span>{{ account.number }}</span>
+  </li>
+</ul>
+```
+
 ---
 
 # ng-if
+
+```html
+<a class="btn btn-info" href="#"  ng-click="disputeTransaction(transaction)" ng-if="transaction.dispute==false">
+  <i class="glyphicon glyphicon-question-sign"></i>
+  Dispute
+</a>
+```
 
 ---
 
 # ng-hide
 
+```html
+<i ng-hide="transaction.date!='pending'" class="glyphicon glyphicon-refresh">?</i>
+```
 
 ---
 
 # ng-click
+
+```html
+<a class="btn btn-danger" href="#"  ng-click="removeAccount(account)">
+  <i class="glyphicon-remove-circle glyphicon"></i> Delete
+</a>
+```
+
+---
+
+# Icon Styles
+
+<http://glyphicons.com>
 
 ---
 
@@ -1258,25 +1318,28 @@ For Windows: You'll need Python from .NET package.
 
 # MEANWorks Adventures
 
-1. node&npm
-1. mongodb
-1. installs: bower, grunt, yo, generator, webdriver
-1. folder
+* 01-node-npm
+* 02-mongodb
+* 03-installs
+* 04-folder
+* 05-seed
 
 ---
 
 # MEANWorks Adventures
 
-8. seed
-9. GET /accounts
-10. GET /transactions
+* seed
+* endpoints
+* 07-ui-transactions
+* 08-ui-accounts
+* 09-ui-main
 
 ---
 
 
 # MEANWorks Adventures
 
-1. ui form
+1. u
 1. ui table
 1. crud-api
 1. crud-ui

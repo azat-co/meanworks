@@ -15,17 +15,17 @@
       </thead>
       <tbody>
         <tr ng-repeat="transaction in transactions">
-          <td class="col-md-2">{{ transaction.date }}<i ng-hide="transaction.date!='pending'" class="fa fa fa-spinner fa-spin">?</i></td>
+          <td class="col-md-2">{{ transaction.date }}<i ng-hide="transaction.date!='pending'" class="glyphicon glyphicon-refresh">?</i></td>
           <td class="col-md-3">{{ transaction.desc.short }}</td>
           <td class="col-md-3">{{ transaction.category }}</td>
           <td class="col-md-2">{{ transaction.amount }}</td>
           <td class="col-md-2">
             <a class="btn btn-info" href="#"  ng-click="disputeTransaction(transaction)" ng-if="transaction.dispute==false">
-              <i class="fa fa-flag-o fa-lg"></i>
+              <i class="glyphicon glyphicon-question-sign"></i>
               Dispute
             </a>
             <a class="btn btn-danger" href="#"  ng-click="cancelDisputeTransaction(transaction)" ng-if="transaction.dispute==true">
-              <i class="fa fa-flag-o fa-lg"></i>
+              <i class="glyphicon glyphicon-ok-sign"></i>
               Cancel Dispute
             </a>
 

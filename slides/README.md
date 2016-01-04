@@ -1328,21 +1328,11 @@ For Windows: You'll need Python from .NET package.
 
 # MEANWorks Adventures
 
-* seed
-* endpoints
+* 06-endpoints
 * 07-ui-transactions
 * 08-ui-accounts
 * 09-ui-main
 
----
-
-
-# MEANWorks Adventures
-
-1. u
-1. ui table
-1. crud-api
-1. crud-ui
 
 ---
 

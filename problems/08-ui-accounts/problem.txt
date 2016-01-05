@@ -1,16 +1,15 @@
 PROBLEM
 
-PROBLEM
+This is the time to use your front-end skills and implement some UI for accounts.
 
-This is the time to use your front-end skills and implement some UI for transactions.
-
-1. Code the template with these elements:
+1. Creat UI routes (in the browser client app) for /accounts so you can see the page on http://localhost:9000/accounts.
+2. Code the template with these elements:
 
 * Form
 * List of existing accounts
 
-2. Supply the data from the server via the controller.
-3. Implement the method to save the new account
+3. Supply the data from the server via the controller.
+4. Implement the method to save the new account
 
 
 --
@@ -22,6 +21,8 @@ Implement the delete buttons (both HTML and controller calls to API).
 ---
 
 HINTS
+
+To create UI routes use `$ yo angular-fullstack:route accounts`. Answer default answers to questions `client/app` and `/accounts`.
 
 The database must be running in its own window/tab or in detached mode. To start the DB, run `$ mongod`.
 The webdriver must be running with `$ webdriver start`.

@@ -52,6 +52,9 @@ exports.verify = function (args, cb) {
     'From here on out, make sure to run the workshop in this dir\n'+
     '\n')
   if (bonus) console.log('BRAVO! You did the bonus part too!')
+  else {
+    console.log('No bonus points were added (scripts in package.json!)')
+  }
 
   return cb(true)
 }

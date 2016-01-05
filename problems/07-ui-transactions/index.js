@@ -42,12 +42,14 @@ exports.verify = function (args, cb) {
         }
         var count = 0
         tags.forEach((item, index, list)=>{
+          // TODO: check the UI data agains DB data
           count ++
           if (html.indexOf(item)<0) {
             console.error(`When checking the content of the page, the ${item} element was not found`)
             console.error('Please use the tag template and content provided at http://bit.ly/1TB1IC0 and http://bit.ly/1TB1LOp.')
             return cb(false)
           }
+          console.log('The %s tag was FOUND!', item)
           if (count == tags.length) {
             console.info('✓ We found some HTML tags. GOOD JOB. Proceed to the next adventure!');
             return cb(true)

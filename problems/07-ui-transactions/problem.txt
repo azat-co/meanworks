@@ -2,7 +2,8 @@ PROBLEM
 
 This is the time to use your front-end skills and implement some UI for transactions.
 
-1. Code the table with these fields:
+1. Creat UI routes (in the browser client app) for /transactions so you can see the page on http://localhost:9000/transactions.
+2. Code the table with these fields:
 
 * Date
 * Description
@@ -10,7 +11,7 @@ This is the time to use your front-end skills and implement some UI for transact
 * Amount
 * Action
 
-2. Supply the data from the server via the controller.
+3. Supply the data from the server via the controller.
 
 --
 
@@ -22,13 +23,20 @@ Implement dispute and cancel dispute buttons (both HTML and controller calls to 
 
 HINTS
 
+To create UI routes use `$ yo angular-fullstack:route transactions`. Answer default answers to questions `client/app` and `/transactions`.
+
 The database must be running in its own window/tab or in detached mode. To start the DB, run `$ mongod`.
 The webdriver must be running with `$ webdriver start`.
 
 The table code can look like this http://bit.ly/1TB1IC0.
 
-The controller uses $http.get like this:
+The controller uses $http.get like this to get the data from the server:
 
 $http.get('/api/transactions').success(function(transactions) {
   $scope.transactions = transactions;
 });
+
+Once you assign a property to the scope, it will be available in your template thanks to two-way binding. Therefore, we can access transactions in `transactions.html` with:
+
+
+  <tr ng-repeat="transaction in transactions">

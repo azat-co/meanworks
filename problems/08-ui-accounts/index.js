@@ -17,7 +17,7 @@ exports.verify = function (args, cb) {
   var cwd = process.cwd(),
     url = 'http://localhost:3000'
 
-  var dbUrl = 'mongodb://localhost:27017/mean'
+  var dbUrl = 'mongodb://localhost:27017/ngfullstacknew-dev'
 
   mongo.connect(dbUrl, function(err, db) {
     if (err) {
@@ -33,7 +33,7 @@ exports.verify = function (args, cb) {
         console.error('The accounts collection is empty in the mean database.')
         return cb(false)
       }
-      console.log('Awesome. You have the data.')
+      console.log('Awesome. You have the data in the database... checking the browser UI app with Selenium driver')
       db.close()
       fetchHtml('http://localhost:9000/accounts', function(err, html){
         if (err) {
@@ -52,6 +52,7 @@ exports.verify = function (args, cb) {
             console.error('Please use the tag template and content provided at http://bit.ly/1TB1IC0 and http://bit.ly/1TB1LOp.')
             return cb(false)
           }
+          console.log('The %s tag was FOUND!', item)
           if (count == tags.length) {
             console.info('✓ We found some HTML tags. GOOD JOB. Proceed to the next adventure!');
             return cb(true)

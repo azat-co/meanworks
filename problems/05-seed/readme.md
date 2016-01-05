@@ -1,6 +1,8 @@
 PROBLEM
 
-We'll need some seed data for our application. For example, this is how a transaction might look like:
+For our application to function and look good, we need to populate some data. This data will be stored in MongoDB and accessed by Angular via Express+Node server.
+
+So we'll need some seed data for our application. For example, this is how a transaction might look like:
 
 {
 	"amount": 350.15,
@@ -36,15 +38,14 @@ $ mongoimport  --host=127.0.0.1 --port=27017 --db ngfullstacknew-dev --collectio
 --collection: name of the collections
 --jsonArray: allows mongoimport to take an array instead of an object
 
-**If you completed bonus in adventure 4-folder, run `$ npm run seed-accounts` and `$ npm run seed-transactions`.
+**If you completed bonus in adventure 04-folder, run `$ npm run seed-accounts` and `$ npm run seed-transactions`.**
 
 You should be able to see your data in mongo console (`$ mongo`) with these commands:
 
-> use mean
+> use ngfullstacknew-dev
 > db.accounts.find()
 > db.transactions.find()
 
-Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and version of MongoDB.
 
 ---
 

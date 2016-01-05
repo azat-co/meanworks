@@ -1,5 +1,7 @@
 PROBLEM
 
+We are almost there. To save the princess from the mean boss, you need to link the pages accounts and transactions from the home page.
+
 How can we navigate to accounts and transactions from the main page? We can add links to the navigation bar!
 
 1. Add the link to accounts in the home page's nav bar in nav bar.

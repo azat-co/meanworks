@@ -17,7 +17,15 @@ exports.verify = function (args, cb) {
         npmName: 'grunt-cli',
         command: 'grunt',
         compatibleVersion: '0.1.13',
-        parseVersion: (version) => {return version.substr(10)}
+        parseVersion: (version) => {
+          // sometime you can have a local grunt (like in the app or ng-fullstack-new folders)
+          // then there are two lines: grunt-cli and grunt, we parse accordingly
+          if (version.indexOf('\n')>-1) {
+            return version.substr(10, version.indexOf('\n')-10)
+          } else {
+            return version.substr(10)
+          }
+        }
       }, () => {checkVersionNpm({
         name: 'Yeoman',
         npmName: 'yo',

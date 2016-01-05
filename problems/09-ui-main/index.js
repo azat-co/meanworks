@@ -33,7 +33,7 @@ exports.verify = function (args, cb) {
         console.error('The accounts collection is empty in the mean database.')
         return cb(false)
       }
-      console.log('Awesome. You have the data.')
+      console.log('Awesome. You have the data... checking UI for the tags')
       db.close()
       fetchHtml('http://localhost:9000', function(err, html){
         if (err) {

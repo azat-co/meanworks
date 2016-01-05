@@ -9,7 +9,6 @@ Create full stack MEAN project ng-fullstack-new with this command (inside of the
 $ yo angular-fullstack ng-fullstack-new
 
 
-
 BONUS points if you copy these script commands into your new package.json:
 
 "scripts": {

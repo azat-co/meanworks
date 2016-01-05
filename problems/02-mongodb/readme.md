@@ -7,8 +7,6 @@ And we're going to check for MongoDB on your computer, and to make sure that you
 
 We are using v3.0.6.
 
-Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and version of MongoDB.
-
 ---
 
 HINTS
@@ -31,3 +29,5 @@ For Mac OS X:
 $ brew install mongodb@3.0.6
 
 Don't forget to set your db path or create `/db/data` folder in root with the right permissions.
+
+Full list of instructions are in the setup.pdf (https://github.com/azat-co/meanworks/blob/master/setup.pdf)

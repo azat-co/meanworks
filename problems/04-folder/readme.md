@@ -2,16 +2,13 @@ PROBLEM
 
 We need to create a folder for our project, so everything can stay neat and well organized.
 
-Create a folder with the name is `ng-fullstack-new` in the meanworks folder, and navigate (cd) into it.
-This is where you'll put all of your project files.
+Create a folder with the name is `ng-fullstack-new` in the meanworks folder, and navigate (cd) into it. This is where you'll put all of your project files.
 
-Create full stack MEAN project ng-fullstack-new with this command:
+Create full stack MEAN project ng-fullstack-new with this command (inside of the newly created folder):
 
 $ yo angular-fullstack ng-fullstack-new
 
-It's important to maintain your code in that folder because MEANWorks will look for your code in that folder.
 
-Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and version of MongoDB.
 
 BONUS points if you copy these script commands into your new package.json:
 

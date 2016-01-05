@@ -2,10 +2,12 @@
 SOLUTION
 ---
 
-Server file (middleware is optional, routes folder is optional-you can write in index.js):
+Server files:
 
-https://github.kdc.capitalone.com/secollege/mean/blob/master/code/index.js
+https://github.com/azat-co/meanworks/tree/master/app/server/api/account
+https://github.com/azat-co/meanworks/tree/master/app/server/api/transaction
 
-Route (just the /accounts):
+Models:
 
-https://github.kdc.capitalone.com/secollege/mean/blob/master/code/routes/accounts.js#L4
+https://github.com/azat-co/meanworks/blob/master/app/server/api/account/account.model.js
+https://github.com/azat-co/meanworks/blob/master/app/server/api/transaction/transaction.model.js

@@ -26,5 +26,5 @@
     "webdriverio": "^3.2.4",
     "which": "^1.1.2"
   },
-  "repository": "https://github.kdc.capitalone.com/secollege/meanworks"
+  "repository": "https://github.com/azat-co/meanworks"
 }

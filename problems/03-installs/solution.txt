@@ -5,3 +5,4 @@ SOLUTION
 $ npm install -g bower@1.5.3
 $ npm install -g grunt-cli@0.1.13
 $ npm install -g generator-angular-fullstack@3.1.1
+$ npm install -g webdriver-manager@8.0.0

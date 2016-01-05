@@ -32,7 +32,17 @@ exports.verify = function (args, cb) {
           console.log(version)
           return version.substr(version.indexOf('generator-angular-fullstack@') + 28) // let's hope there's not nested generators
         }
-        }, cb)}
+      }, () => {checkVersionNpm({
+        name: 'Webdriver Manager',
+        npmName: 'webdriver-manager',
+        specialCommand: 'npm ls webdriver-manager -g',
+        compatibleVersion: '8.0.0',
+        parseVersion: (version) => {
+          console.log(version)
+          return  version.substr(version.indexOf('webdriver-manager@') + 18)
+        }
+      }, cb)}
+      )}
       )})
     }
   )

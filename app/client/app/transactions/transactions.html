@@ -15,7 +15,7 @@
       </thead>
       <tbody>
         <tr ng-repeat="transaction in transactions">
-          <td class="col-md-2">{{ transaction.date }}<i ng-hide="transaction.date!='pending'" class="glyphicon glyphicon-refresh">?</i></td>
+          <td class="col-md-2">{{ transaction.date }}<i ng-hide="transaction.date!='pending'" class="glyphicon glyphicon-refresh"></i></td>
           <td class="col-md-3">{{ transaction.desc.short }}</td>
           <td class="col-md-3">{{ transaction.category }}</td>
           <td class="col-md-2">{{ transaction.amount }}</td>

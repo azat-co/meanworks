@@ -1,0 +1,33 @@
+PROBLEM
+
+This is the time to use your front-end skills and implement some UI for transactions.
+
+1. Code the table with these fields:
+
+* Date
+* Description
+* Category
+* Amount
+* Action
+
+2. Supply the data from the server via the controller.
+
+--
+
+BONUS
+
+Implement dispute and cancel dispute buttons (both HTML and controller calls to API).
+
+---
+
+HINTS
+
+The database must be running in its own window/tab or in detached mode. To start the DB, run `$ mongod`.
+
+The table code can look like this http://bit.ly/1TB1IC0.
+
+The controller uses $http.get like this:
+
+$http.get('/api/transactions').success(function(transactions) {
+  $scope.transactions = transactions;
+});

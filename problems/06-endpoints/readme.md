@@ -1,6 +1,6 @@
 PROBLEM
 
-How do you persist the data from/to a single-page app? Via the server: Angular app will make AJAX/XHR requests to the server on specific routes such as /api/accounts for working with accounts.
+How do you persist the data from/to a single-page app? Via the server: Angular app will make AJAX/XHR requests to the server on specific routes such as /api/accounts for working with accounts. Similarly to GET /api/accounts, we need GET /api/transactions. Create GET /transactions route that sends back the transactions in JSON (from database!).
 
 We'll need some RESTful API or RESTful endpoints/routes for /api/accounts and /api/transactions.
 
@@ -44,3 +44,6 @@ var TransactionSchema = new mongoose.Schema({
     default: false
   }
 })
+
+
+The app must be running with `grunt serve` when you verify!

@@ -20,7 +20,7 @@ To install bower v1.4.1 execute this command in your Terminal/Command prompt:
 
 $ npm install -g bower@1.4.1
 
-If you're working under proxy, configur bower appropriately.
+If you're working under proxy, configure bower appropriately.
 
 Bower is like an npm only for front-end modules. It has a flat-structure in its dependency folder bower_components.
 

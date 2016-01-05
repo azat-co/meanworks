@@ -2,17 +2,18 @@ MEANWorks: MongoDB/Mongoose, Express, Angular and Node Workshop with Angular Ful
 
 =========
 
-![](screen.png)
+![](slides/images/screen.png)
 
 ---
 
 M.E.A.N. Works is a workshop on
 
-* MongoDB
+* MongoDB+Mongoose
 * Express.js
 * AngularJS
 * Node.js
 
+with Angular Fullstack Generator.
 ---
 
 ## Installation
@@ -51,23 +52,16 @@ If `$ npm link` fails, try `$ node meanworks.js` or `$ npm start`.
 
 ## Adventures
 
-1. node
-1. npm
-1. mongodb
-1. bower
-1. gulp
-1. folder
-1. package.json
-1. seed
-1. GET /accounts
-1. GET /transactions
-1. yo
-1. webdriver
-1. header
-1. footer
-1. table
-1. crud-api
-1. crud-ui
+1. 01-node-npm
+1. 02-mongodb
+1. 03-installs
+1. 04-folder
+1. 05-seed
+1. 06-endpoints
+1. 07-ui-transactions
+1. 08-ui-accounts
+1. 09-ui-mai
+
 
 ---
 
@@ -91,4 +85,4 @@ Bugs?
 
 1. Fork this repository
 1. Make changes in a branch off from master
-1. Submit a pull request to azat-co/meanworks (this tool) or secollege/mean (official solution).
+1. Submit a pull request to azat-co/meanworks (this tool)

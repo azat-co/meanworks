@@ -35,15 +35,13 @@ For power users (advanced hackers):
 
 https://gist.github.com/isaacs/579814
 
-For 4.1.1 version:
-
-https://nodejs.org/dist/v4.1.1/
-
 For multi-version setup (power users):
 
 * n https://github.com/tj/n
 * nvm https://github.com/creationix/nvm
 * nave https://github.com/isaacs/nave
+
+To use nvm: nvm use 4.2.2, nvm install 5.1.0
 
 npm comes with Node, so no extra steps for installation-just configuration. Check your version with `$ npm -v`.
 

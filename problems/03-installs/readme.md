@@ -25,12 +25,13 @@ $ npm install -g bower@1.4.1
 
 If you're working under proxy, configur bower appropriately.
 
-
 Bower is like an npm only for front-end modules. It has a flat-structure in its dependency folder bower_components.
 
 Please install bower like any other npm module. Do it globally, because bower is a command-line tool and not a project dependency. (Command-line tools installed globally while project dependencies installed locally.)
 
 We are using v1.4.1. Please use bower v1.4.1.
+
+If you see two grunt (grunt-cli and grunt) run `npm uninstall grunt`.
 
 Use `yo --version` to check the version.
 

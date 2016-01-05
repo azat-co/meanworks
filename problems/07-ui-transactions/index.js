@@ -17,7 +17,7 @@ exports.verify = function (args, cb) {
   var cwd = process.cwd(),
     url = 'http://localhost:3000'
 
-  var dbUrl = 'mongodb://localhost:27017/mean'
+  var dbUrl = 'mongodb://localhost:27017/ngfullstacknew-dev'
 
   mongo.connect(dbUrl, function(err, db) {
     if (err) {

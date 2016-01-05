@@ -1288,7 +1288,7 @@ angular.module('ngFullstackNewApp')
 # Installation
 
 ```
-$ git clone https://github.kdc.capitalone.com/secollege/meanworks.git
+$ git clone https://github.com/azat-co/meanworks.git
 $ cd meanworks
 $ npm install
 $ npm link

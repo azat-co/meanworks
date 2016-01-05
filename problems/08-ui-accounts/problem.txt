@@ -1,26 +1,30 @@
 PROBLEM
 
+PROBLEM
+
+This is the time to use your front-end skills and implement some UI for transactions.
+
+1. Code the template with these elements:
+
+* Form
+* List of existing accounts
+
+2. Supply the data from the server via the controller.
+3. Implement the method to save the new account
 
 
-Run `$ $ADVENTURE_COMMAND verify` when you are ready to check the installation and version of MongoDB.
+--
+
+BONUS
+
+Implement the delete buttons (both HTML and controller calls to API).
 
 ---
 
 HINTS
 
-To install execute:
+The database must be running in its own window/tab or in detached mode. To start the DB, run `$ mongod`.
 
-$ bower install https://github.kdc.capitalone.com/chassis/oneui-tables.git --save-dev
+The template can look like this http://bit.ly/1TB5g7B.
 
----
-
-Run `$ $ADVENTURE_COMMAND verify` once that is done.
-
-Some helpful commands:
-
-`$ $ADVENTURE_COMMAND help` to get help with the workshop
-`$ $ADVENTURE_COMMAND print` to re-display the current exercise
-`$ $ADVENTURE_COMMAND verify YOUR_FILE_NAME` to verify that you have finished an exercise
-`$ $ADVENTURE_COMMAND solution` to show the solution for the current exercise
-
-`$ $ADVENTURE_COMMAND verify skip` to skip it.
+The controller uses this code: http://bit.ly/1TB59c8.

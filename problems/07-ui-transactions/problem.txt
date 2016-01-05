@@ -23,6 +23,7 @@ Implement dispute and cancel dispute buttons (both HTML and controller calls to 
 HINTS
 
 The database must be running in its own window/tab or in detached mode. To start the DB, run `$ mongod`.
+The webdriver must be running with `$ webdriver start`.
 
 The table code can look like this http://bit.ly/1TB1IC0.
 

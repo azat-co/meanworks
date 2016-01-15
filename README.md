@@ -18,13 +18,13 @@ with Angular Fullstack Generator.
 
 ## Installation
 
-Easy way:
+The easy way:
 
 ```
-$ npm install meanworks@latest
+$ npm install --global meanworks@latest
 ```
 
-Hard way:
+The hard way (better for development/fixes):
 
 ```
 $ git clone https://github.com/azat-co/meanworks.git

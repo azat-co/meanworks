@@ -3,9 +3,9 @@
 const which = require('which')
 
 module.exports = (name) => {
-  let node
+  let path
   try {
-    node = which.sync(name)
+    path = which.sync(name)
   } catch (error) {
     console.error(`It looks like ${name} is not installed.`)
     console.error(error)
@@ -13,8 +13,8 @@ module.exports = (name) => {
   }
 
   // Surrounds with double quotes if path contains a space
-  if (node.indexOf(' ') != -1) {
-    node = '"' + node + '"'
+  if (path.indexOf(' ') != -1) {
+    path = '"' + path + '"'
   }
-  return node
+  return path
 }

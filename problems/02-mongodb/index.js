@@ -19,11 +19,6 @@ exports.verify = function (args, cb) {
       return cb(false)
     }
 
-    // Surrounds with double quotes if path contains a space
-    if (mongod.indexOf(' ') != -1) {
-      mongod = '"' + mongod + '"';
-    }
-
     // figure out what version we have
     exec(mongod + ' --version', function (code, stdout, stderr) {
       var v = ('' + stdout).trim()

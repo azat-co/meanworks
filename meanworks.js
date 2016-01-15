@@ -5,6 +5,10 @@
 //   while (str.indexOf('`')>-1 && str.indexOf) {
 //
 //   return _log(args)
+if (require('semver').lt(process.versions.node, '4.0.0')) {
+  console.error('You need Node version 4.0 or higher.')
+  process.exit(1)
+}
 global.console.error = function(){
   var args = arguments
   args[0] = require('chalk').bold.red(args[0])

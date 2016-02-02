@@ -16,9 +16,9 @@ HINTS
 
 Use `bower --version` to check the version.
 
-To install bower v1.4.1 execute this command in your Terminal/Command prompt:
+To install bower v1.5.3 execute this command in your Terminal/Command prompt:
 
-$ npm install -g bower@1.4.1
+$ npm install -g bower@1.5.3
 
 If you're working under proxy, configure bower appropriately.
 
@@ -26,16 +26,16 @@ Bower is like an npm only for front-end modules. It has a flat-structure in its 
 
 Please install bower like any other npm module. Do it globally, because bower is a command-line tool and not a project dependency. (Command-line tools installed globally while project dependencies installed locally.)
 
-Please use Bower v1.4.1.
+Please use Bower v1.5.3.
 
 As for grunt, if you see encounter issues then run `$ grunt --version`.
 If you see two grunt (grunt-cli and grunt) run `$ npm uninstall grunt` and re-verify.
 
 Use `$ yo --version` to check the version.
 
-To install Yeoman v1.4.7 execute:
+To install Yeoman v1.5.1 execute:
 
-$ npm install -g yo@1.4.7
+$ npm install -g yo@1.5.1
 
 Yo docs: https://github.com/yeoman/yo
 Yo website: http://yeoman.io

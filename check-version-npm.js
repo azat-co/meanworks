@@ -8,6 +8,7 @@ module.exports = (options, callback)=> {
   setTimeout(function(){
     var command
     var versionCommand
+    var args = options.args || []
     if (options.specialCommand) {
       versionCommand = options.specialCommand
     } else {
@@ -21,8 +22,10 @@ module.exports = (options, callback)=> {
     // figure out what version we have
     exec(versionCommand, function (code, stdout, stderr) {
       if (code) {
-        console.error('Uh oh!  commandb had a problem! %j', code)
-        process.stderr.write(stderr)
+        console.error('Uh oh! Command %s had a problem!', versionCommand)
+        console.error(`Do you have ${options.name} version ${options.compatibleVersion} installed?`)
+        console.warn('Run `$ npm install --global %s@%s` to install it', options.npmName, options.compatibleVersion)
+        // process.stderr.write(stderr)
         return callback(false)
       }
       var version = ('' + stdout).trim()
@@ -36,14 +39,16 @@ module.exports = (options, callback)=> {
         console.warn('Run `$ npm install -g %s@%s` to upgrade it', options.npmName, options.compatibleVersion)
         console.warn('(You can also just skip this if you want- at your own risk!)')
         if (args.join('').toLowerCase() === 'skip') {
+          console.warn('Skipping the version check')
           return callback(true)
         } else {
           return callback(false)
         }
+
       }
       console.info('✓ Congratulations!\n' +
                   'You have a compatible version of %s (%s) installed!', options.name, options.compatibleVersion)
       return callback(true)
     })
-  }, 750)
+  }, Math.round(Math.random()*500)) // To make it look like the tool is working hard
 }

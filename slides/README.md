@@ -709,10 +709,17 @@ Yeoman generator for AngularJS with an Express server
 
 ---
 
+# Generator Usage
+
 ```
 $ npm install -g yo grunt-cli bower generator-angular-fullstack
 $ mkdir my-new-project && cd $_
 $ yo angular-fullstack [app-name]
+```
+
+```
+$ grunt test
+$ grunt serve
 ```
 
 ---
@@ -939,20 +946,6 @@ Deployment:
   angular-fullstack:heroku
 ```
 
----
-
-# Generator Demo!
-
-It's demo time! :telescope: :computer: :ok_hand:
-
-```
-$ mkdir app
-$ yo angular-fullstack app
-$ grunt test
-$ grunt serve
-```
-
-<http://localhost:9000/>
 
 ---
 
@@ -988,6 +981,21 @@ App: <https://github.com/azat-co/tree/master/app>
 Running the app, i.e., official solution to MEANWorks (optional, because you'll be building your own):
 
 <https://github.com/azat-co/tree/master/app/readme.md>
+
+---
+
+# App Demo
+
+It's demo time! :telescope: :computer: :ok_hand:
+
+```
+$ mkdir app
+$ yo angular-fullstack app
+$ grunt test
+$ grunt serve
+```
+
+<http://localhost:9000/>
 
 ---
 

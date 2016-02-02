@@ -60,7 +60,7 @@ If `$ npm link` fails, try `$ node meanworks.js` or `$ npm start`.
 1. 06-endpoints
 1. 07-ui-transactions
 1. 08-ui-accounts
-1. 09-ui-mai
+1. 09-ui-main
 
 
 ---
@@ -69,7 +69,7 @@ If `$ npm link` fails, try `$ node meanworks.js` or `$ npm start`.
 
 If you have completed all or some of the adventures but want to do them again, simply run meanworks reset.
 
-![](reset.png)
+![](https://raw.githubusercontent.com/azat-co/meanworks/master/reset.png)
 
 ---
 

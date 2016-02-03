@@ -23,7 +23,7 @@ This workshop comes with [lectures](https://www.youtube.com/playlist?list=PLguYm
 
 [![](https://raw.githubusercontent.com/azat-co/meanworks/master/video.png)](https://www.youtube.com/watch?v=t5jwB8LzXKc&list=PLguYmmjtxbWEdBy8FqGcz7ZIdl0cHV9SY&index=1)
 
-Full MEANWorks playlist: .
+Full MEANWorks playlist: <https://www.youtube.com/playlist?list=PLguYmmjtxbWEdBy8FqGcz7ZIdl0cHV9SY>.
 
 Slides: <https://github.com/azat-co/meanworks/blob/master/slides/README.pdf>
 

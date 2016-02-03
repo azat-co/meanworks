@@ -29,6 +29,7 @@ var adventure = require('adventure');
 var shop = adventure('meanworks')
 
 var problems = [
+  '00-videos',
   '01-node-npm',
   '02-mongodb',
   '03-installs', // bower, grunt-cli, yo, generator-angular-fullstack, webdriver

@@ -2,7 +2,7 @@ MEANWorks: MongoDB/Mongoose, Express, Angular and Node Workshop with Angular Ful
 
 =========
 
-![](https://raw.githubusercontent.com/azat-co/meanworks/master/slides/images/screen.png)
+![](https://raw.githubusercontent.com/azat-co/meanworks/master/screen.png)
 
 ---
 

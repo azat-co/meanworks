@@ -14,7 +14,16 @@ M.E.A.N. Works is a workshop on
 * Node.js
 
 with Angular Fullstack Generator.
+
 ---
+
+## Videos
+
+This workshop comes with [lectures](https://www.youtube.com/playlist?list=PLguYmmjtxbWEdBy8FqGcz7ZIdl0cHV9SY). It's recommended to watch lectures (6 videos) before starting the workshop, because they will give you a good general overview of the MEAN stack.
+
+Full MEANWorks playlist: .
+
+Slides: <https://github.com/azat-co/meanworks/blob/master/slides/README.pdf>
 
 ## Installation
 

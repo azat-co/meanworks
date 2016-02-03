@@ -984,13 +984,11 @@ Running the app, i.e., official solution to MEANWorks (optional, because you'll 
 
 ---
 
-# App Demo
-
-It's demo time! :telescope: :computer: :ok_hand:
+# Boilerplate
 
 ```
 $ mkdir app
-$ yo angular-fullstack app
+$ yo angular-fullstack ng-fullstack-new
 $ grunt test
 $ grunt serve
 ```
